@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../ESTUDOS/Projeto Alunos LadingPage"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "projeto-landing-page"
+	}
+}

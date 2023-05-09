@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Landing Page</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div id="title">
+                <h1>4SAFE</h1>
+                <h1>SEGUROS</h1>
+            </div>
+            <ul class=" menu-cabeçalho">
+            
+                <a href="#services"><li>Serviços</li></a>
+                <a href="#footer_social_media"><li>Contato</li></a>
+                <a id="ja-tem-conta" href="#formulario"><li>Já tem uma conta?</li></a>
+            </ul>
+        </header>
+        <main>
+            <aside class="asideLeft">
+                <div>
+                    <h2>FAÇA AGORA O SEU SEGURO</h2>
+                    <h2>NA <span>4SAFE</span></h2>
+                </div>
+                <div class="textoUm">
+                    <p> Na 4Safe você tem acesso produtos de seguridade de uma forma simples e prática. Nossa proposta é oferecer seguros de
+                        vida e seguros automotivos para pessoas que não gostam da burocracia das seguradoras tradicionais.</p>
+                </div>
+              
+                <form id="formulario" action="">
+                    <input id="inputNome" type="text" placeholder="Nome">
+                    <input id="inputEmail" type="email" placeholder="E-mail">
+                    <input id="inputTel" type="tel" placeholder="Telefone">
+                    <button onclick="alertClick()" id="submit">Enviar</button>
+                </form>
+            </aside>
+
+            <article class="imgOnTherigh" >
+                <img class="logo" src="IMAGENS/4SAFE SEGUROS.avif" alt="LOGO">
+            </article>
+            
+            <aside class="seguro_vida">
+                 
+                <div  id="services" class="texto-seguro-vida">
+                    <div>
+                        <h2>SEGURO DE VIDA</h2>
+                    </div>
+                    <p>
+                        Benefícios em vida, contratos descomplicados e coberturas que atendem às suas necessidades.
+                    </p>
+                    <div >
+                        <ul class="list_seguro_vida">
+                            <li>Segurança para seus famíliares caso você venha faltar.</li>
+                            <li>Proteção para você em caso de uma invalidez causada por acidente.</li>
+                            <li>Proteção para você em caso do diagnóstico de uma doença grave, como Câncer, AVC, doença de Parkinson, Alzheimer, etc. São 30 doenças, a maior cobertura do Brasil!</li>
+                            <li>Proteção para você em caso de uma invalidez causada por doença.</li>
+                            <li>Caso você venha a faltar, seus familiares ou amigos podem acionar a prestação de serviços e receberão todo auxílio necessário nesse momento difícil.</li>
+                        </ul>
+                    </div>
+                    <div id="btn_simular">
+                        <button onclick="alertSeguroVida()" id="btn_vida" type="button">SIMULE AGORA</button>
+                    </div>
+                </div>
+                <div class="img_seguro_vida">
+                    <figure>
+                        <img src="IMAGENS/retrato-de-corpo-inteiro-de-uma-jovem-familia-africana-feliz_171337-5044.avif" alt="">
+                    </figure>
+                </div>
+            </aside>
+           
+            <aside class="seguro_carro">
+                <div class="texto_seguro_carro">
+                    <div>
+                        <h2>SEGURO AUTOMOTIVO</h2>
+                    </div>
+                    <p>
+                        Encontre as melhores ofertas de seguro de carro por um preço justo. Faça uma cotação de seguro auto gratuita e 100% online, com resultados na sua tela.
+                    </p>
+                    <div>
+                        <ul class="list_seguro_carro">
+                            <li><h4>Colisões e Acidentes</h4>
+                                Protege contra perda parcial ou integral, conforme cláusula contratual.</li>
+                            <li>Roubo e furto
+                                Cobre avarias (veículo recuperado) ou indenização dentro do valor da Tabela FIPE (veículo não recuperado).</li>
+                            <li>Danos da natureza e incêndio
+                                Proteção para quedas de árvores, enchentes, incêndio e raios.</li>
+                            <li>Assistência 24 horas
+                                Socorro imediato: problema mecânico ou elétrico, pane seca, troca de pneus ou bateria e chaveiro, além de guincho.</li>
+                        </ul>
+                    </div>
+                    <div id="btn_simular" >
+                        <button onclick="alertSeguroCarro()" id="btn_carro" type="submit">SIMULE AGORA</button>
+                    </div>
+                </div>
+                <div class="img_seguro_carro">
+                    <figure >
+                        <img id="imgcarro" src="IMAGENS/seguro-auto-75.jpg" alt="">
+                    </figure>
+                </div>
+            </aside>
+        </main>
+        <footer>
+            <div id="footer_content">
+                <div id="footer_contacts">
+                    <h1>4SAFE</h1>
+                    <p>A sua segurança, é a nossa prioridade!</p>
+
+                    <div id="footer_social_media">
+                        <a href="https://www.instagram.com/" target="_blank" class="footer-link" id="instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        <a href="https://www.facebook.com/" target="_blank" class="footer-link" id="facebook">
+                            <i class="fa-brands fa-facebook"></i>
+                        <a href="https://web.whatsapp.com/" target="_blank" class="footer-link" id="whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i>
+                        <a href="https://twitter.com/" target="_blank" class="footer-link" id="twitter">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                    <div>
+
+                    </div>
+                </div>
+
+                <ul class="footer-list">
+                    <li>
+                        <h3>Informações</h3>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Política de privacidade</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footer-link">Termos de serviço</a>
+                    </li>
+                  
+                </ul>
+                <ul class="footer-list">
+                    <li>
+                        <h3>Endereço</h3>
+                    </li>
+                    <li>
+                        <a href="#footer_social_media" class="footer-link">Av Bernardino, 42, Centro, Juazeiro do Norte.</a>
+                    </li>
+                    
+                </ul>
+                <ul class="footer-list">
+                    <li>
+                        <h3>Suporte</h3>
+                    </li>
+                    <li>
+                        <a href="#footer_social_media" class="footer-link">Contate-nos</a>
+                    </li>
+
+                </ul>
+
+
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
